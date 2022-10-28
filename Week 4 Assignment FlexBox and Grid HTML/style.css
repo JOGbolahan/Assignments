@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+   
+}
+
+body{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.CardItem{
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 60px;
+}
+
+.CardItem h2{
+    color: hsl(0, 0%, 95%);
+    font-family: 'Big Shoulders Display', cursive;
+    
+}
+
+.CardItem p{
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    flex-grow: 1;
+}
+
+.CardItem button{
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    border-radius: 20px;;
+}
+
+.CardItem button:hover{
+    background-color: transparent;
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+    color: hsla(0, 0%, 100%, 0.75);
+    cursor: pointer;
+}
+
+.C1 button{
+    color: hsl(31, 77%, 52%);
+}
+
+.C2 button{
+    color: hsl(184, 100%, 22%);
+}
+
+.C3 button{
+    color: hsl(179, 100%, 13%);
+}
+
+.Cards{
+    display: flex;
+    flex-direction: row;
+    height: 600px;
+    width: 900px;
+    border-radius: 10px;
+    overflow: hidden;    
+}
+
+.C1{
+    background: hsl(31, 77%, 52%);
+}
+
+.C2{
+    background: hsl(184, 100%, 22%);
+}
+
+.C3{
+    background: hsl(179, 100%, 13%);
+}
+
+@media screen and (max-width:540px) {
+    body{
+        padding: 70px 30px;
+    }
+    .Cards{
+        flex-direction: column;
+        height: 1800px;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+}
+
+
+
+
+
+
+
+
+/*font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend', sans-serif;
+font-family: 'Montserrat', sans-serif;*/

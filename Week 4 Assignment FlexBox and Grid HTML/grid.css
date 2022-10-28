@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;  
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: rgb(209, 235, 222);
+    display: grid;
+    place-items: center;
+    
+}
+
+main{
+    display: grid;
+    grid-template-areas: 
+    'C2 C2 C1'
+    'C3 C3 C1'
+    ;
+    gap: 20px;
+    margin: auto;
+    width: 900px;
+    padding: 70px;
+    overflow: hidden;
+}
+
+main div{
+    border-radius: 20px;
+    text-align: left;
+    padding: 2cm;
+}
+
+.CardItem{
+    padding: 70px;
+    display: grid;
+    align-items: center;
+    position: relative;
+}
+
+.CardItem h2{
+    color: hsl(0, 0%, 0%);
+    font-family: 'Big Shoulders Display', cursive;
+    
+}
+
+.CardItem p{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    color: hsla(0, 29%, 13%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 15px;
+    text-align: left;
+}
+
+.CardItem button{
+    margin-top: 40px;
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px 30px;
+    border: none;
+    outline: none;
+    border-radius: 20px;;
+}
+
+.CardItem button:hover{
+    background-color: transparent;
+    padding: 10px 30px;
+    border: 2px solid hsla(0, 0%, 100%, 0.75);
+    color: hsla(0, 0%, 100%, 0.75);
+    cursor: pointer;
+}
+
+.C1{
+    grid-area: C1;
+    background-color: hsl(31, 100%, 77%);
+}
+.C1:hover{
+    padding: 90px;
+    grid-area: C1;
+    background-color: hsl(31, 28%, 37%);
+}
+
+.C2{
+    grid-area: C2;
+    background-color: hsl(184, 88%, 48%);
+}
+.C2:hover{
+    padding: 90px;
+    grid-area: C2;
+    background-color: hsl(184, 26%, 38%);
+}
+
+.C3{
+    grid-area: C3;
+    background-color: hsl(207, 84%, 47%);
+}
+.C3:hover{
+    padding: 90px;
+    grid-area: C3;
+    background-color: hsl(207, 100%, 21%);
+}
+.C1 button{
+    color: hsl(31, 100%, 77%);
+}
+
+.C2 button{
+    color: hsl(184, 88%, 48%);
+}
+
+.C3 button{
+    color: hsl(207, 84%, 47%);
+}
+
+.CardItem img{
+    height: 30px;
+}
+
+
+
+
+
+/*font-family: 'Big Shoulders Display', cursive;
+font-family: 'Lexend', sans-serif;
+font-family: 'Montserrat', sans-serif;*/
