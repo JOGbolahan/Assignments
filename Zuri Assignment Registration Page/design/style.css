@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+*{
+    padding: 0; margin: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif;;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(230, 180, 16);
+}
+.Container{
+    min-width: 486px;
+    flex-wrap: wrap;
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0px 5px 10px black;
+}
+.Container .Form{
+    padding: 30px;
+}
+.Container .Form .Title1{
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+}
+.Form .Title1::before{
+    content: '';
+    position: absolute;
+    left: 0; bottom: 0; height: 3px; width: 30px;
+    background-color: rgb(230, 180, 16);
+    border-radius: 25px;
+}
+
+.Container .Form .Title2{
+    top: 30px;
+    position: relative;
+    font-size: 30px;
+    font-weight: 600;
+}
+.Form .Title2::before{
+    content: '';
+    position: absolute;
+    left: 0; bottom: 0; height: 3px; width: 30px;
+    background-color: rgb(230, 180, 16);
+    border-radius: 25px;
+}
+
+.Form .InputField{
+    margin-top: 30px;
+    position: relative;
+    height: 50px;
+    width: 100%;
+}
+.InputField input{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    padding: 0px 35px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(180, 179, 176);
+    border-top: 2px solid hidden; 
+    transition: all 0.2s ease;
+}
+.InputField input:is(:focus, :valid){
+    border-color: rgb(230, 180, 16);
+}
+.InputField input:is(:focus, :valid) ~ i {
+    color: rgb(230, 180, 16);
+}
+.InputField i{
+    position: absolute;
+    top: 15%;
+    left: 0;
+    transform: translateY(-50);
+    color: rgb(10, 10, 0);
+    font-size: 23px;
+}
+.Form .CheckboxText{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.Form .Text{
+    font-size: 14px;
+}
+.CheckboxText .CheckboxContent{
+    display: flex;
+    align-items: center;
+}
+.CheckboxContent input{
+    accent-color: rgb(230, 180, 16);
+    margin: 0px 8px 0px 4px;
+}
+.Form a{
+    text-decoration: none;
+}
+.Form a:hover{
+    text-decoration: underline;
+}
+.Form .InputFieldButton{
+    margin-top: 35px;
+    margin-bottom: 20px;
+    display: block;
+    width: 100%;
+    padding: 14px 28px;
+    text-align: center;
+}
+.Form .InputFieldButton input{
+    border: none;
+    color: rgb(255, 255, 255);
+    letter-spacing: 1px;
+    background-color: rgb(175, 158, 4);
+    border-radius: 6px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.InputFieldButton input:hover{
+    background-color: rgb(99, 76, 3);
+}
+.Form .LoginSignUp{
+    margin-top: 30px;
+    text-align: center;
+}
